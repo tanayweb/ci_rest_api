@@ -88,7 +88,7 @@ $routes->get('/api/items', [ItemController::class, 'index'], ['filter' => 'authF
 
 $routes->get('/api/users/(:num)', "UserController::get_user/$1",['filter' => 'authFilter']);
 
-$routes->get('/', 'Home::index',['filter' => 'authFilter']);
+$routes->get('/', 'Home::index');
 
 /*
  * --------------------------------------------------------------------
